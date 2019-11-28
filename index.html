@@ -1,1 +1,43 @@
-asd
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>全球时区</title>
+
+<link href="./s/timeTo.css" type="text/css" rel="stylesheet" />
+<style>
+        pre {
+            margin-bottom: 10px;
+            padding-left: 10px;
+            border-left: 3px #DDD solid;
+        }
+        #countdown-3{ width:444px; position: fixed;top:50%; left:calc(50% - 222px);}
+    </style>
+</head>
+<body>
+
+<div id="countdown-3"></div>
+
+<script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.slim.min.js"></script>
+<script src="./s/time.js"></script>
+<script>
+
+        var time = '23:59:54';
+
+        /**
+         * Set theme and captions
+         */
+        $('#countdown-3').timeTo({
+            time: time,
+            displayDays: 2,
+            theme: "black",
+            displayCaptions: true,
+            fontSize: 48,
+            captionSize: 14,
+            lang: 'es'
+        });
+
+    </script>
+</body>
+</html>
